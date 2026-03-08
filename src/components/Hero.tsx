@@ -39,12 +39,12 @@ const Hero: React.FC = () => {
           </motion.div>
         </div>
 
-        <h1 className="text-5xl md:text-8xl lg:text-9xl font-serif text-primary leading-tight font-bold drop-shadow-xl">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-serif text-primary leading-tight font-bold drop-shadow-xl">
           8-Mart Muborak <br />
           <span className="text-gradient">Bo‘lsin!</span>
         </h1>
 
-        <p className="text-xl md:text-3xl max-w-3xl mx-auto text-muted-foreground font-medium italic leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-3xl max-w-3xl mx-auto text-muted-foreground font-medium italic leading-relaxed px-4">
           "Dunyoning eng nafis gullari, bahorning eng iliq nuri va hayotning eng
           go‘zal qahramonlari bo‘lgan ayollar, bayramingiz bilan!"
         </p>
@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-primary flex flex-col items-center gap-2"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-primary flex flex-col items-center gap-2"
       >
         <p className="text-sm font-semibold uppercase tracking-[0.3em]">
           Pastga tushing
