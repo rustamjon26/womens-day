@@ -26,21 +26,21 @@ const MusicPlayer: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
       <AnimatePresence>
         {showTooltip && (
           <motion.div
             initial={{ opacity: 0, x: 20, scale: 0.8 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: 20, scale: 0.8 }}
-            className="absolute bottom-20 right-0 w-72 bg-white/90 glass p-5 rounded-[2rem] shadow-2xl mb-4 border border-primary/20"
+            className="absolute bottom-16 sm:bottom-20 right-0 w-[calc(100vw-3rem)] max-w-72 bg-white/90 glass p-4 sm:p-5 rounded-[1.5rem] sm:rounded-[2rem] shadow-2xl mb-4 border border-primary/20"
           >
-            <p className="text-sm font-bold text-primary flex items-center gap-3">
-              <div className="p-2 bg-primary/10 rounded-full">
-                <Sparkles className="w-5 h-5 animate-pulse" />
+            <div className="text-xs sm:text-sm font-bold text-primary flex items-center gap-2 sm:gap-3">
+              <div className="p-1.5 sm:p-2 bg-primary/10 rounded-full shrink-0">
+                <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 animate-pulse" />
               </div>
               Yaxshi kayfiyat uchun bayramona musiqani yoqing ✨
-            </p>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -49,7 +49,7 @@ const MusicPlayer: React.FC = () => {
         whileHover={{ scale: 1.15, rotate: 5 }}
         whileTap={{ scale: 0.9 }}
         onClick={toggleMusic}
-        className={`relative p-5 rounded-full shadow-[0_20px_40px_rgba(225,29,72,0.2)] transition-all duration-500 group overflow-hidden border-2 ${
+        className={`relative p-4 sm:p-5 rounded-full shadow-[0_20px_40px_rgba(225,29,72,0.2)] transition-all duration-500 group overflow-hidden border-2 ${
           isPlaying
             ? "bg-primary text-white border-primary scale-110"
             : "bg-white/80 glass text-primary border-primary/20 hover:bg-white hover:border-primary/40"
