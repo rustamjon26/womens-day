@@ -75,7 +75,7 @@ const MusicPlayer: React.FC = () => {
         <audio
           ref={audioRef}
           loop
-          src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=spring-waltz-piano-1100.mp3"
+          src="/bombinsound-international-womens-day-490545.mp3"
           className="hidden"
         />
       </motion.button>
