@@ -33,7 +33,7 @@ const MusicPlayer: React.FC = () => {
             initial={{ opacity: 0, x: 20, scale: 0.8 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: 20, scale: 0.8 }}
-            className="absolute bottom-16 sm:bottom-20 right-0 w-[calc(100vw-3rem)] max-w-72 bg-white/90 glass p-4 sm:p-5 rounded-[1.5rem] sm:rounded-[2rem] shadow-2xl mb-4 border border-primary/20"
+            className="absolute bottom-16 sm:bottom-20 right-0 w-max max-w-[calc(100vw-2rem)] bg-white/90 glass p-4 sm:p-5 rounded-[1.5rem] sm:rounded-[2rem] shadow-2xl mb-4 border border-primary/20"
           >
             <div className="text-xs sm:text-sm font-bold text-primary flex items-center gap-2 sm:gap-3">
               <div className="p-1.5 sm:p-2 bg-primary/10 rounded-full shrink-0">
