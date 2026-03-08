@@ -1,15 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const FlowerPetals: React.FC = () => {
-  const [petals, setPetals] = useState<{ id: number; left: string; duration: string; delay: string; size: string; opacity: number }[]>([]);
+  const [petals, setPetals] = useState<
+    {
+      id: number;
+      left: string;
+      duration: string;
+      delay: string;
+      size: string;
+      opacity: number;
+    }[]
+  >([]);
 
   useEffect(() => {
-    const newPetals = Array.from({ length: 25 }).map((_, i) => ({
+    const isMobile = window.innerWidth < 768;
+    const count = isMobile ? 12 : 25;
+
+    const newPetals = Array.from({ length: count }).map((_, i) => ({
       id: i,
       left: `${Math.random() * 100}%`,
       duration: `${10 + Math.random() * 20}s`,
       delay: `${Math.random() * 20}s`,
-      size: `${10 + Math.random() * 20}px`,
+      size: `${isMobile ? 8 + Math.random() * 12 : 10 + Math.random() * 20}px`,
       opacity: 0.3 + Math.random() * 0.4,
     }));
     setPetals(newPetals);

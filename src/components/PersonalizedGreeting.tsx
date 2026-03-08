@@ -104,7 +104,7 @@ const PersonalizedGreeting: React.FC = () => {
             animate={{ opacity: 1, scale: 1, rotateY: 0 }}
             exit={{ opacity: 0, scale: 0.8, rotateY: -30 }}
             transition={{ type: "spring", damping: 20, stiffness: 100 }}
-            className="w-full max-w-2xl glass p-10 md:p-20 rounded-[4rem] shadow-[0_32px_64px_-16px_rgba(225,29,72,0.2)] relative overflow-hidden text-center border-2 border-white/60 bg-gradient-to-br from-white/80 to-primary/5"
+            className="w-full max-w-2xl glass p-6 sm:p-10 md:p-20 rounded-[2.5rem] sm:rounded-[4rem] shadow-[0_32px_64px_-16px_rgba(225,29,72,0.2)] relative overflow-hidden text-center border-2 border-white/60 bg-gradient-to-br from-white/80 to-primary/5"
           >
             <motion.div
               animate={{ rotate: [0, 10, -10, 0], scale: [1, 1.1, 1] }}
@@ -120,28 +120,28 @@ const PersonalizedGreeting: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                <div className="inline-flex gap-3 mb-10">
+                <div className="inline-flex gap-3 mb-6 sm:mb-10">
                   <motion.div
                     animate={{ scale: [1, 1.3, 1] }}
                     transition={{ repeat: Infinity, duration: 2 }}
                   >
-                    <Sparkles className="w-10 h-10 text-secondary" />
+                    <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-secondary" />
                   </motion.div>
                   <motion.div
                     animate={{ scale: [1, 1.3, 1] }}
                     transition={{ repeat: Infinity, duration: 2, delay: 0.3 }}
                   >
-                    <Heart className="w-10 h-10 text-primary fill-primary/20" />
+                    <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-primary fill-primary/20" />
                   </motion.div>
                   <motion.div
                     animate={{ scale: [1, 1.3, 1] }}
                     transition={{ repeat: Infinity, duration: 2, delay: 0.6 }}
                   >
-                    <Sparkles className="w-10 h-10 text-secondary" />
+                    <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-secondary" />
                   </motion.div>
                 </div>
 
-                <h3 className="text-5xl md:text-7xl font-serif mb-10 text-primary leading-tight font-bold">
+                <h3 className="text-3xl sm:text-5xl md:text-7xl font-serif mb-6 sm:mb-10 text-primary leading-tight font-bold px-2">
                   Aziz{" "}
                   <span className="text-gradient drop-shadow-sm">
                     {submittedName}
@@ -150,7 +150,7 @@ const PersonalizedGreeting: React.FC = () => {
                   8-Mart muborak!
                 </h3>
 
-                <p className="text-xl md:text-3xl italic text-muted-foreground font-medium leading-relaxed mb-16 px-4">
+                <p className="text-lg sm:text-xl md:text-3xl italic text-muted-foreground font-medium leading-relaxed mb-10 sm:mb-16 px-2 sm:px-4">
                   "Sizni Xalqaro xotin-qizlar kuni bilan chin qalbdan
                   tabriklaymiz! 🌷 Sizga bahordek beg‘uborlik, go‘zal baxt,
                   so‘nmas quvonch va doimo go‘zallik tilaymiz. Hayotingiz faqat
@@ -161,10 +161,10 @@ const PersonalizedGreeting: React.FC = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={reset}
-                  className="px-12 py-5 border-2 border-primary/20 text-primary rounded-full font-bold text-lg hover:bg-primary/5 transition-all flex items-center gap-3 mx-auto group shadow-lg"
+                  className="w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-5 border-2 border-primary/20 text-primary rounded-full font-bold text-base sm:text-lg hover:bg-primary/5 transition-all flex items-center justify-center gap-3 mx-auto group shadow-lg"
                 >
-                  <RefreshCcw className="w-5 h-5 group-hover:rotate-180 transition-transform duration-700" />
-                  Yana boshqa ism kiritish
+                  <RefreshCcw className="w-4 h-4 sm:w-5 sm:h-5 group-hover:rotate-180 transition-transform duration-700" />
+                  Boshqa ism kiritish
                 </motion.button>
               </motion.div>
             </div>

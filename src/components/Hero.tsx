@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-primary hidden sm:flex flex-col items-center gap-2"
+        className="absolute bottom-1 left-1/2 -translate-x-1/2 text-primary hidden sm:flex flex-col items-center gap-2"
       >
         <p className="text-sm font-semibold uppercase tracking-[0.3em]">
           Pastga tushing
